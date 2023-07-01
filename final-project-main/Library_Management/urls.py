@@ -31,6 +31,7 @@ urlpatterns = [
     path('books/edit-book/<task_id>', views.edit_book, name='edit_book'),
     path('books/edit-person/<task_id>', views.edit_person, name='edit_person'),
     path('books/edit-issued/<task_id>', views.edit_issue, name='edit_issued'),
+
 ]
 
 

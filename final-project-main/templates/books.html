@@ -2,158 +2,577 @@
 
 
 {% block content %}
-    <div class="container">
-        <h1>کتاب ها</h1>
+        <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+        <link rel="stylesheet" href="./css/product_style.css">
+        <title>Book Zone</title>
+    </head>
+    <body>
+        <style>
+             h2 {
+                color: white;
+              }
+        </style>
 
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            افزودن کتاب
-                        </button>
-                    </h2>
-                </div>
+        <div class="section-body">
+            <div class="vertical-nav">
+                <ul>
+                    <h4><left>Category</left></h4>
+                    <li><a href="#Adventure">Adventure</a></li>
+                    <li><a href="#Thriller">Thriller</a></li>
+                    <li><a href="#Romantic">Romantic</a></li>
+                    <li><a href="#Comedy">Comedy</a></li>
+                </ul>
+            </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                     data-parent="#accordionExample">
-                    <div class="card-body">
-                        <form method="post">
-                            {% csrf_token %}
-                            <div class="row">
-                                <div class="col">
-                                    <label>شابک کتاب</label>
-                                    <input required type="text" class="form-control" name="isbn" placeholder="شابک 13 رقمی را وارد کنید"
-                                    pattern="[0-9]{13}" maxlength="13">
-                                </div>
-                                <div class="col">
-                                    <label>نام کتاب</label>
-                                    <input required type="text" class="form-control" name="name" placeholder="نام کتاب را وارد کنید"
-                                    pattern="[a-zA-Z ]{3,}">
-                                </div>
-                                <div class="col">
-                                    <label>نام نویسنده</label>
-                                    <input required type="text" class="form-control" name="author" placeholder="نام نویسنده را وارد کنید"
-                                    pattern="[a-zA-Z ]{4,}">
-                                </div>
+            <div class="gallery-main" style="margin-left:25%;padding:1px 16px;height:1000px;">
+                <div class="Adventure" id="Adventure">
+                    <h2>Adventure</h2>
 
-                                <div class="col">
-                                    <label>نام ناشر</label>
-                                    <input required type="text" class="form-control" name="publisher"
-                                           placeholder="نام ناشر را وارد کنید">
+                    <div class="gallery">
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="final-project-main/static/img/Adv1.png" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 200
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/Adv2.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 250
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/Adv3.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 180
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/Adv4.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 460
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/Adv5.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 390
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/Adv6.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 100
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/adv7.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 304
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="image-holder">
+                            <a href="#">
+                                <img src="./images/adv8.jfif" alt="img-1">
+                            </a>
+                            <div class="desc">
+                                Price : 340
+                                <br>
+                                 
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Thriller -->
+
+                    <div class="Thriller" id="Thriller">
+                        <h2>Thriller</h2>
+    
+                        <div class="gallery">
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th1.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 120
+                                    <br>
+                                      
                                 </div>
                             </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th2.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 402
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th3.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 299
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th4.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 150
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th5.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 300
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th6.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 389
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th7.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 269
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+                            <div class="image-holder">
+                                <a href="#">
+                                    <img src="./images/th8.jfif" alt="img-1">
+                                </a>
+                                <div class="desc">
+                                    Price : 451
+                                    <br>
+                                      
+                                </div>
+                            </div>
+    
+    
+                        </div>
 
-                            <br>
-                            <button type="submit" class="btn btn-primary">ثبت</button>
+                        <!-- Romantic -->
+                        <div class="Romantic" id="Romantic">
+                            <h2>Romantic</h2>
+        
+                            <div class="gallery">
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r1.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 250
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r2.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 300
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r3.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 450
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r4.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 299
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r5.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 105
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r6.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 199
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r7.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 299
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="image-holder">
+                                    <a href="#">
+                                        <img src="./images/r8.jfif" alt="img-1">
+                                    </a>
+                                    <div class="desc">
+                                        Price : 349
+                                        <br>
+                                           
+                                    </div>
+                                </div>
+        
+        
+                            </div>
 
-                        </form>
-                    </div>
+                            <!-- Comedy -->
+                            <div class="Comedy" id="Comedy">
+                                <h2>Comedy</h2>
+            
+                                <div class="gallery">
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="images/c1.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 400
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c2.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 299
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c3.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 349
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c4.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 299
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c5.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 199
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c6.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 149
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c7.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 349
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+                                    <div class="image-holder">
+                                        <a href="#">
+                                            <img src="./images/c8.jfif" alt="img-1">
+                                        </a>
+                                        <div class="desc">
+                                            Price : 250
+                                            <br>
+                                                
+                                        </div>
+                                    </div>
+            
+            
+                                </div>
+        
+                                
+                            
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            جست و جو
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <form method="get">
 
-                            <label>:شابک کتاب یا نام نویسنده را وارد کنید</label>
-                            <input required type="text" name="q" placeholder="شابک 13 رقمی یا نام نویسنده">
+            <br>
+              
 
-                            <button type="submit" class="btn btn-primary">جست و جو</button>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <br>
-        {% if messages %}
-            {% for mssg in messages %}
-                <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                    {{ mssg }}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            {% endfor %}
-        {% endif %}
-        <br>
-        {% if all_books %}
-            <br>
-            <table class="table table-bordered ">
-                <thead class="table-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">نام کتاب</th>
-                    <th scope="col">شابک کتاب</th>
-                    <th scope="col">نویسنده</th>
-                    <th scope="col">ناشر</th>
-                    <th scope="col">ویرایش</th>
+
+    </body>
+
+</html>
+<style>
+    
+body {margin:0;}
+
+.navbar{
+  display: flex;
+  background-color:rgb(60, 124, 197);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right li a:hover {
+    background-color: rgb(31, 199, 106);
+  }
+
+  .nav-right .active {
+    background-color: #04AA6D;
+  }
 
 
-                </tr>
-                </thead>
-                <tbody>
-                {% for obj in all_books %}
+/* body section  */
+
+.section-body{
+    
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.section-body h4{
+    font-size: large;
+}
+
+.vertical-nav
+{
+    padding-top: 10px;
+}
 
 
-                    <tr>
+.section-body ul {
+    list-style-type: none;
+    width: 18%;
+    background-color: #d6e4f0;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .section-body  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .section-body li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .section-body li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
 
-                        <td>{{ obj.id }}</td>
-                        <td>{{ obj.name }}</td>
-                        <td>{{ obj.isbn }}</td>
-                        <td>{{ obj.author }}</td>
-                        <td>{{ obj.publisher }}e</td>
-                        <td><a href="{% url 'edit_book' obj.id %}"> ویرایش </a></td>
+/* 
+  section-2 */
 
+  .image-holder{
+    border: 1px solid #ccc;
+    transition-duration:200ms;
+    transition-timing-function: ease-out;
+  }
+  
+  .image-holder:hover {
+    border: 1px solid #777;
+    transform: scale(1.05,1.05);
+  }
+  
+.gallery{
+    
+    display: flex;
+    flex-direction: row; 
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
 
-                    </tr>
+div.desc {
+    text-align: center;
+    width: 100%;
+ }
 
-                {% endfor %}
-                </tbody>
-            </table>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                    <li class="page-item"><a class="page-link" href="?pg=1"><<</a></li>
-                    {% if all_books.has_previous %}
-                        <li class="page-item"><a class="page-link"
-                                                 href="?pg={{ all_books.previous_page_number }}">{{ all_books.previous_page_number }}</a>
-                        </li>
-                    {% endif %}
-                    <li class="page-item"><a class="page-link"
-                                             href="?pg={{ all_books.number }}">{{ all_books.number }}</a></li>
-                    {% if all_books.has_next %}
-                        <li class="page-item"><a class="page-link"
-                                                 href="?pg={{ all_books.next_page_number }}">{{ all_books.next_page_number }}</a>
-                        </li>
-                    {% endif %}
-                    <li class="page-item"><a class="page-link" href="?pg={{ all_books.paginator.num_pages }}">>></a>
-                    </li>
-                </ul>
-            </nav>
-            <style>
-              
-                .container {
-                  background-color: rgba(0, 0, 0, 0.5);
-                  padding: 20px;
-                }
-              
-                h1, h2, h3, h4, h5, h6 {
-                  color: white;
-                }
-              </style>
-        {% else %}
-            <h4>!چیزی پیدا نشد</h4>
-            </div>
-        {% endif %}
+ .desc i{
+    float: left !important;
+    padding-left: 10px;
+ }
+
+ .desc button{
+    float:right !important;
+    margin-right: 10px;
+    margin-bottom: 5px;
+ }
+
+.gallery img{
+    height: 250px;
+    width:200px;
+}
+
+.btn
+{
+    display: block;
+    border-radius: 5px;
+    color:white;
+    background-color: blue;
+    font-size:20px;
+    text-decoration: none;
+    width:fit-content;
+    height:fit-content;
+    padding:5px;
+}
+
+.btn:hover{
+    background-color: rgb(31, 199, 106)ue;
+}
+
+</style>
 {% endblock %}

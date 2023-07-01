@@ -16,7 +16,7 @@
                         color: red;
                       }
                 }
-                th, td {
+                th, td , h3 {
                   color: rgb(255, 255, 255);
                 }
               </style>
@@ -26,28 +26,28 @@
                   <div class="content">
                     <h2 class="title">1984</h2>
                     <p class="copy">رمانی مدرن-کلاسیک که ویران شهر یا مدینه ی فاسده را به مخاطب نشان می دهد</p>
-                    <button class="btn">View Trips</button>
+                    <a href="{% url 'issued' %}" class="btn">بیشتر</a>
                   </div>
                 </div>
                 <div class="card">
                   <div class="content">
                     <h2 class="title">باشگاه ۵ صبحی ها</h2>
                     <p class="copy">کتابی انگیزشی است که اهمیت سحرخیزی را می‌توان در خط به خط آن یافت</p>
-                    <button class="btn">View Trips</button>
+                    <a href="{% url 'issued' %}" class="btn">بیشتر</a>
                   </div>
                 </div>
                 <div class="card">
                   <div class="content">
                     <h2 class="title">هری پاتر و سنگ جادو</h2>
                     <p class="copy">نخستین کتاب از مجموعه کتاب‌های هری پاترد</p>
-                    <button class="btn">Book Now</button>
+                    <a href="{% url 'issued' %}" class="btn">بیشتر</a>
                   </div>
                 </div>
                 <div class="card">
                   <div class="content">
                     <h2 class="title">نحسی ستارگان بخت ما</h2>
                     <p class="copy">داستان عاشقانه‌ مدرنی که ناامیدی‌ها و انگیزه‌های دو نوجوان مبتلا به سرطان را روایت می‌کند.</p>
-                    <button class="btn">Book Now</button>
+                    <a href="{% url 'issued' %}" class="btn">بیشتر</a>
                   </div>
                 </div>
               </main>
@@ -136,7 +136,7 @@
             transition: transform calc(var(--d) * 2) var(--e);
             }
             .card:nth-child(1):before {
-            background-image: url("static/img/40 best books to read before you die.png");
+            background-image: url("static/img/40 best books to read before you die.jpg");
             }
             .card:nth-child(2):before {
             background-image: url("static/img/40 Ultimate Best Books For Men (Updated for 2020).jpg");
